@@ -1,10 +1,10 @@
 {
-  "created_utc": "2026-09-05T21:55:40.194693+00:00",
-  "research_question": "How did life expectancy change over time in the selected countries, and how is it related to GDP per capita?",
+  "created_utc": "2026-09-10T20:30:24.004663+00:00",
+  "research_question": "How has life expectancy in Ghana changed between 1952 and 2007 compared with Kenya, Nigeria, and South Africa?",
   "focus_countries": [
     "Ghana",
-    "Nigeria",
     "Kenya",
+    "Nigeria",
     "South Africa"
   ],
   "period": {
@@ -12,16 +12,16 @@
     "end": 2007
   },
   "raw_source": {
-    "tool": "urllib",
-    "url": "https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv",
-    "path": "/home/jovyan/work/notebooks/data_analysis_process/assignments/data/raw/gapminder_raw.csv",
-    "bytes": 82079,
-    "status": null,
-    "retrieved_utc": "2026-09-05T00:04:28.457096+00:00",
-    "from_cache": true
+    "source_name": "Gapminder five-year country indicators",
+    "source_url": "https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv",
+    "publisher": "Gapminder Foundation, distributed in the Plotly datasets collection",
+    "documentation": "https://www.gapminder.org/data/documentation/",
+    "local_path": "/home/jovyan/work/notebooks/data_analysis_process/assignments/itfy-data-gathering-download-florence/data/raw/gapminder_five_year_raw.csv",
+    "retrieved_utc": "2026-09-10T20:30:02.104508+00:00",
+    "sha256_checksum": "714f8a23e9d7429052a1e9b45d20b9adeb64f46c067ed46320e68182e4607b6d"
   },
   "clean_output": {
-    "path": "/home/jovyan/work/notebooks/data_analysis_process/assignments/data/clean/gapminder_focus_countries_clean.csv",
+    "path": "/home/jovyan/work/notebooks/data_analysis_process/assignments/itfy-data-gathering-download-florence/data/clean/gapminder_focus_countries_clean.csv",
     "rows": 48,
     "columns": 7,
     "bytes": 3064,
