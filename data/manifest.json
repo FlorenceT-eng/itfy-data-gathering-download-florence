@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-05T21:55:40.194693+00:00",
+  "research_question": "How did life expectancy change over time in the selected countries, and how is it related to GDP per capita?",
+  "focus_countries": [
+    "Ghana",
+    "Nigeria",
+    "Kenya",
+    "South Africa"
+  ],
+  "period": {
+    "start": 1952,
+    "end": 2007
+  },
+  "raw_source": {
+    "tool": "urllib",
+    "url": "https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv",
+    "path": "/home/jovyan/work/notebooks/data_analysis_process/assignments/data/raw/gapminder_raw.csv",
+    "bytes": 82079,
+    "status": null,
+    "retrieved_utc": "2026-09-05T00:04:28.457096+00:00",
+    "from_cache": true
+  },
+  "clean_output": {
+    "path": "/home/jovyan/work/notebooks/data_analysis_process/assignments/data/clean/gapminder_focus_countries_clean.csv",
+    "rows": 48,
+    "columns": 7,
+    "bytes": 3064,
+    "round_trip_ok": true
+  },
+  "cleaning_steps": [
+    "Renamed the columns to clear, lowercase names with underscores.",
+    "Converted year to integer and numerical measures to float.",
+    "Kept only the selected focus countries and the years 1952 to 2007.",
+    "Dropped rows with missing life expectancy values because missing values should not be treated as zero.",
+    "Removed exact duplicate rows to avoid counting the same observation more than once.",
+    "Created a population_billions column by converting population from people to billions.",
+    "Sorted the cleaned data by country and year and reset the index."
+  ],
+  "tools": {
+    "pandas": "3.0.5"
+  }
+}

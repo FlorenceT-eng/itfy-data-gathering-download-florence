@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-08T23:26:38.221479+00:00",
+  "research_question": "How has life expectancy in Ghana changed between 1952 and 2007 compared with Kenya, Nigeria, and South Africa?",
+  "focus_countries": [
+    "Ghana",
+    "Kenya",
+    "Nigeria",
+    "South Africa"
+  ],
+  "period": {
+    "start": 1952,
+    "end": 2007
+  },
+  "raw_source": {
+    "source_name": "Gapminder five-year country indicators",
+    "source_url": "https://raw.githubusercontent.com/plotly/datasets/master/gapminderDataFiveYear.csv",
+    "publisher": "Gapminder Foundation, distributed in the Plotly datasets collection",
+    "documentation": "https://www.gapminder.org/data/documentation/",
+    "local_path": "/home/jovyan/work/notebooks/data_analysis_process/assignments/data/raw/gapminder_five_year_raw.csv",
+    "retrieved_utc": "2026-09-08T23:26:03.664236+00:00",
+    "sha256_checksum": "714f8a23e9d7429052a1e9b45d20b9adeb64f46c067ed46320e68182e4607b6d"
+  },
+  "clean_output": {
+    "path": "/home/jovyan/work/notebooks/data_analysis_process/assignments/data/clean/gapminder_focus_countries_clean.csv",
+    "rows": 48,
+    "columns": 7,
+    "bytes": 3064,
+    "round_trip_ok": true
+  },
+  "cleaning_steps": [
+    "Renamed the columns to clear, lowercase names with underscores.",
+    "Converted year to integer and numerical measures to float.",
+    "Kept only the selected focus countries and the years 1952 to 2007.",
+    "Dropped rows with missing life expectancy values because missing values should not be treated as zero.",
+    "Removed exact duplicate rows to avoid counting the same observation more than once.",
+    "Created a population_billions column by converting population from people to billions.",
+    "Sorted the cleaned data by country and year and reset the index."
+  ],
+  "tools": {
+    "pandas": "3.0.5"
+  }
+}
